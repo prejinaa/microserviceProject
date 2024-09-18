@@ -1,7 +1,7 @@
 package com.exampl.merchant.dto;
 import java.time.LocalDateTime;
 
-public record MerchantResponse(
+public record MerchantWithAccountResponse(
         Long merchantId,
         String businessName,
         String businessAddress,
@@ -9,6 +9,6 @@ public record MerchantResponse(
         String email,
         Long userId,
         LocalDateTime createDate,
-        LocalDateTime lastModified
-) {
+        LocalDateTime lastModified,
+        java.util.List<AccountResponse> accountResponse) {
 }

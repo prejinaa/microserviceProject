@@ -7,4 +7,4 @@ public record MerchantRequest(
         String email,
         Long userId
 ) {
-}
+  }
